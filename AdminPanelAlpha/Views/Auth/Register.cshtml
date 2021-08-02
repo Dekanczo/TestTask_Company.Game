@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Sign up";
+}
+
+
+<div class="text-center">
+    <div style="width: 300px;margin: 0 auto;">
+        <br />
+
+        <form class="px-4 py-3" method="post" asp-controller="Auth" asp-action="Register">
+            <div class="form-group">
+                <label for="login">Login </label>
+                <input class="form-control" id="login" name="login" placeholder="">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign up</button>
+        </form>
+        <br />
+        <span>@ViewData["ActionMessage"]</span>
+    </div>
+</div>

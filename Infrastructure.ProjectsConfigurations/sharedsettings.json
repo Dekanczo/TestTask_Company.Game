@@ -1,0 +1,15 @@
+{
+  "CurrentEnvironment":  "Production",
+  "ConnectionStrings": {
+    "Local": "Server=(localdb)\\mssqllocaldb;Database=Game;Trusted_Connection=True;",
+    "Production": "Server=tcp:gameserver.database.windows.net;Database=Game;Trusted_Connection=False;User ID=denimm;Password=triti6231d1f1q1w1z1x1don't!;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}

@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    IEnumerable<Gamer> gamers = ViewData.Model;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Gamers Data</h1>
+    
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Level</th>
+            <th>UserId</th>
+        </tr>
+        @if (@gamers != null)
+            @foreach (var @c in @gamers) 
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.Name</td>
+                    <td>@c.Level</td>
+                    <td>@c.UserId</td>
+                </tr>
+            }
+    </table>
+</div>

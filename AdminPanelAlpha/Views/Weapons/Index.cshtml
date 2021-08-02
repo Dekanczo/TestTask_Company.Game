@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    IEnumerable<Weapon> weapons = ViewData.Model;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Weapons Data</h1>
+    
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Price</th>
+            <th>Damage</th>
+            <th>Speed</th>
+            <th>Cooldown</th>
+            <th>MagazineVolume</th>
+            <th>Level</th>
+        </tr>
+        @if (@weapons != null)
+            @foreach (var @c in @weapons) 
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.Name</td>
+                    <td>@c.Price</td>
+                    <td>@c.Damage</td>
+                    <td>@c.Speed</td>
+                    <td>@c.Cooldown</td>
+                    <td>@c.MagazineVolume</td>
+                    <td>@c.Level</td>
+                </tr>
+            }
+    </table>
+</div>
